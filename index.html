@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Exercice JS</title>
+</head>
+
+<body onload="rnd_op()">
+    <!-- Exercice 1 -->
+    <form>
+        <label for="username">Comment tu t'appelles?</label><br>
+        <input type="text" placeholder="Ex: Stephane52" id="username">
+        <input type="button" value="Répondre" onclick="repondre()" id="envoyer">
+    </form>
+
+    <hr style="margin-top: 20px;margin-bottom: 20px;">
+
+    <!-- Exercice 3 -->
+    <form>
+        <label for="email">Idéntifiant :</label><br>
+        <input type="text" placeholder="Ex: léa@gmail.com" id="email"><br><br>
+        <label for="mdp">Mot de passe :</label><br>
+        <input type="password" id="mdp"><br>
+        <input type="button" value="Se connecter" onclick="tlogin()" id="login">
+    </form>
+
+    <hr style="margin-top: 20px;margin-bottom: 20px;">
+
+    <!-- Exercice 4 -->
+    <form>
+        <label for="calcul" id="num-1"></label> <label for="calcul" id="sgop"></label> <label for="calcul"
+            id="num-2"></label><br>
+        <input type="text" placeholder="20" id="calcul">
+        <input type="button" value="Vérifier" onclick="vcalc()" id="verif">
+    </form>
+
+    <hr style="margin-top: 20px;margin-bottom: 20px;">
+
+    <!-- Exercice 5 -->
+    <style>
+        table,
+        th,
+        td,
+        tr {
+            border: 2px solid;
+            text-align: center;
+        }
+
+        tbody td {
+            width: 25px;
+        }
+    </style>
+
+    <form>
+        <input type="button" value="Afficher notes et moyenne" onclick="notes()" id="rfrnts"><br><br>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="10"><b>Notes</b></td>
+                </tr>
+            </thead>
+            <tbody id="lsnt">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="10"><b id="moy"></b></td>
+                </tr>
+            </tfoot>
+        </table><br><br>
+    </form>
+
+    <hr style="margin-top: 20px;margin-bottom: 20px;">
+
+    <!-- Exercice 6 -->
+    <form>
+        <label for="chiffre">Indique un numéro entre 0 et 10</label><br>
+        <input type="text" placeholder="8" id="chiffre">
+        <input type="button" value="Tenter ma chance" onclick="tirer()" id="tenter">
+    </form>
+
+</body>
+
+</html>
